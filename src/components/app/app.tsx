@@ -28,7 +28,6 @@ import {
 } from '@slices';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Preloader } from '../ui/preloader';
 
 const App = () => {
   const navigate = useNavigate();
