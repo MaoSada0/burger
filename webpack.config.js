@@ -48,9 +48,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new ESLintPlugin({
-      extensions: ['.js', '.jsx', '.ts', '.tsx']
-    }),
     new HtmlWebpackPlugin({
       template: './public/index.html'
     }),
@@ -77,7 +74,7 @@ module.exports = {
       '@ui-pages': path.resolve(__dirname, './src/components/ui/pages'),
       '@utils-types': path.resolve(__dirname, './src/utils/types'),
       '@api': path.resolve(__dirname, './src/utils/burger-api.ts'),
-      '@slices': path.resolve(__dirname, './src/services/slices'),
+      '@slices': path.resolve(__dirname, './src/slices'),
       '@hooks': path.resolve(__dirname, './src/hooks'),
       '@store': path.resolve(__dirname, './src/services/store.ts'),
       '@selectors': path.resolve(__dirname, './src/services/selectors')
